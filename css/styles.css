@@ -165,8 +165,11 @@ img {
 }
 
 .list-accounts .link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   fill: var(--icon-fill);
 }
@@ -380,7 +383,11 @@ address {
 }
 
 .feature-list .icon-container {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
   margin-bottom: 30px;
   background-color: var(--team-section-bgc);
 }
@@ -443,6 +450,7 @@ address {
   height: 92px;
   width: 100%;
   border: var(--clients-list-border);
+  border-radius: 4px;
   fill: var(--icon-fill);
 }
 
@@ -506,7 +514,8 @@ address {
   line-height: 1.88;
 }
 
-.projects-list > .list-item:hover {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
